@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    button {
+  height: 50px;
+  width: 110px;
+  margin-top: 4px;
+  margin: 6px;
+  border-radius: 19px;
+}
+
+#red {
+  color: aliceblue;
+  background-color: red;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+  color: aliceblue;
+}
+
+#blue {
+  background-color: blue;
+  color: aliceblue;
+}
+
+#black {
+  background-color: black;
+  color: aliceblue;
+}
+
+#grid {
+  display: flex;
+}
+
+.next {
+  height: 500px;
+  width: 250;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a1 {
+  height: 250px;
+  width: 200px;
+  background-color: black;
+  margin: 10px;
+}
+
+.a2 {
+  height: 250px;
+  width: 200px;
+  background-color: green;
+  margin: 10px;
+}
+
+.a3 {
+  height: 250px;
+  width: 200px;
+  background-color: chartreuse;
+  margin: 10px;
+}
+
+.a4 {
+  height: 250px;
+  width: 200px;
+  background-color: red;
+  margin: 10px;
+}
+
+.a5 {
+  height: 250px;
+  width: 200px;
+  background-color: yellow;
+  margin: 10px;
+}
+
+.a6 {
+  height: 250px;
+  width: 200px;
+  background-color: blue;
+  margin: 10px;
+}
+
+
+
+  </style>
+  <body>
+    <div class="conatiner">
+      <button id="red" onclick="red()">Red</button>
+      <button id="yellow">Yellow</button>
+      <button id="green">Green</button>
+      <button id="blue">Blue</button>
+      <button id="black">Black</button>
+    </div>
+
+    
+    </div>
+
+    <script>
+  document.getElementById('red').addEventListener('click', () => {
+  document.body.style.backgroundColor = 'red';
+});
+
+document.getElementById('blue').addEventListener('click', () => {
+  document.body.style.backgroundColor = 'blue';
+});
+
+document.getElementById('green').addEventListener('click', () => {
+  document.body.style.backgroundColor = 'green';
+});
+
+document.getElementById('black').addEventListener('click', () => {
+  document.body.style.backgroundColor = 'Black';
+});
+
+document.getElementById('yellow').addEventListener('click', () => {
+  document.body.style.backgroundColor = 'yellow';
+});
+
+var red = document.getElementsByClassName('btn');
+red.addEventListener('click', () => {
+  red.style.backgroundColor = 'green';
+});
+
+    </script>
+  </body>
+</html>
